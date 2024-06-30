@@ -1,0 +1,23 @@
+.titulo.laranja {
+    color: orange;
+}
+
+.titulo.vermelho {
+    color: red;
+}
+
+.titulo .verde {
+    color: green;
+}
+
+a[target=_blank] {
+    color: brown;
+}
+
+div > p {
+    color: aqua;
+}
+
+div + p {
+    color: blueviolet;
+}
