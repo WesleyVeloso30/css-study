@@ -1,0 +1,28 @@
+header {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    padding: 10px 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu li a:hover {
+    border-radius: 10px;
+    background-color: green;
+    color: #ffff;
+}
