@@ -19,19 +19,49 @@
     1- A 1° com minimo de 100px e maximo de 500px de largura
     2- A 2° e a 3° (repeat) com minimo de 100px e maximo de 300px de largura
     3- A 4° com auto no minimo e maximo de largura */
-    grid-template-columns: minmax(100px, 800px) repeat(2, minmax(100px, 300px)) minmax(auto, auto);
+    /* grid-template-columns: minmax(100px, 800px) repeat(2, minmax(100px, 300px)) minmax(auto, auto); */
+
+    grid: 
+        "celula1 celula1 celula1" 200px
+        "celula2 celula3 celula4" 400px
+        "celula5 celula5 celula5" 250px
+        / 160px auto 60px;
  }
 
 .celula-1 {
+    grid-area: celula1;
+
     /* grid-column-start: 1; */
     /* grid-column-end: 3; */
-    grid-column: 1 / span 2;
+    /* grid-column: 1 / span 2; */
 
     /* grid-row-start: 1; */
     /* grid-row-end: 3; */
-    grid-row: 1 / span 2;
+    /* grid-row: 1 / span 2; */
+
+    /*
+        grid-row-start
+        grid-column-start
+        grid-row-end
+        grid-column-end 
+    */
+    grid-area: 1 / 1 / 3 / 3;
+    
+}
+
+.celula-2 {
+    grid-area: celula1;
 }
 
 .celula-3 {
-    grid-column: 1 / span 2;
+    grid-area: celula3;
+    /* grid-column: 1 / span 2; */
+}
+
+.celula-4 {
+    grid-area: celula4;
+}
+
+.celula-5 {
+    grid-area: celula5;
 }
