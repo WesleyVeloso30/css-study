@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick=show()>Mostrar</button>
+    <button onclick=remove()>Remover</button>
+    <div id="product">
+        
+    </div>
+</body>
+<script>
+    const product = document.getElementById('product');
+    const show = () => {
+        product.innerHTML = `<div class="animeLeft">
+        <h1>Produto</h1>
+        <p>Descrição do produto</p>
+    </div>`;
+    }
+    const remove = () => {
+        product.innerHTML = '';
+    }
+</script>
+</html>
